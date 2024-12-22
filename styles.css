@@ -1,0 +1,328 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: white; /* Màu đỏ của pizza */
+  color: black;
+  padding: 5px 20px; /* Thêm khoảng cách bên trái và bên phải */
+  position: fixed; /* Đặt vị trí cố định cho header */
+  top: 0; /* Cố định ở đầu trang */
+  width: 100%; /* Chiều rộng 100% để bao phủ toàn bộ chiều rộng */
+  z-index: 1000; /* Đảm bảo header nằm trên các phần tử khác */
+}
+
+nav {
+  display: flex; /* Sử dụng flexbox để căn chỉnh logo và nav cùng hàng */
+  justify-content: space-between; /* Đặt khoảng cách giữa logo và nav */
+  align-items: center; /* Căn giữa theo chiều dọc */
+}
+
+.logo {
+  margin-left: 100px; /* Lùi logo sang phải */
+  color: goldenrod; /* Thay đổi màu chữ của logo */
+  text-decoration: none; /* Bỏ gạch chân */
+  font-size: 24px; /* Kích thước chữ cho logo (có thể điều chỉnh) */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0; /* Bỏ padding mặc định */
+  margin-left: 20px; /* Lùi thanh nav sang trái */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+nav ul li a {
+  color: black; /* Set link color */
+  text-decoration: none; /* Remove underline */
+}
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: white;
+  color: black;
+}
+
+.system {
+  text-align: right; /* Giữ nguyên căn chỉnh bên phải cho menu */
+}
+#pizza-taste {
+  display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+  justify-content: space-between; /* Căn giữa hai phần tử */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 20px; /* Thêm khoảng cách xung quanh */
+}
+
+.content {
+  max-width: 50%;
+  margin-left: 100px;
+  max-height: 20px;
+}
+
+.image img {
+  max-width: 100%; /* Đảm bảo hình ảnh không vượt quá chiều rộng phần tử */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+
+.view-menu {
+  display: inline-block; /* Để nút có thể được căn giữa và có padding */
+  padding: 10px 20px; /* Thêm khoảng cách cho nút */
+  background-color: goldenrod; /* Màu nền cho nút */
+  color: white; /* Màu chữ cho nút */
+  text-decoration: none; /* Bỏ gạch chân */
+  border-radius: 5px; /* Bo góc cho nút */
+  margin: 10px 0;
+}
+h1 {
+  font-size: 65px;
+  margin: 10px 0;
+  color: goldenrod;
+}
+p {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+#pizza-about {
+  display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+  justify-content: space-between; /* Căn giữa hai phần tử */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 20px; /* Thêm khoảng cách xung quanh */
+  margin-right: 300px;
+}
+
+.about-us {
+  max-width: 50%;
+  margin-left: 100px; /* Giới hạn chiều rộng của nội dung */
+}
+
+h2 {
+  font-size: 20px;
+  color: goldenrod;
+}
+#about1 {
+  margin: 10px 0;
+}
+#about2 {
+  font-size: 15px;
+  margin: 10px 0;
+}
+#image-about {
+  margin-left: 80px;
+}
+h3 {
+  text-align: center;
+  margin: 10px 0;
+  color: goldenrod;
+}
+h4 {
+  font-size: 40px;
+  text-align: center;
+  margin: 10px 0;
+}
+.box {
+  flex: 1; /* Các div sẽ có chiều rộng bằng nhau */
+  margin: 0 10px; /* Khoảng cách giữa các div */
+  text-align: center;
+}
+
+.box img {
+  width: 30%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của div */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+.box-menu {
+  display: flex; /* Sử dụng flexbox để căn chỉnh các div */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các div */
+  padding: 20px; /* Thêm khoảng cách xung quanh container */
+}
+h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0;
+}
+h6 {
+  font-size: 15px;
+  margin: 10px 0;
+}
+h7 {
+  font-size: 15px;
+}
+.box {
+  position: relative; /* Đặt vị trí tương đối cho box */
+  flex: 1; /* Các div sẽ có chiều rộng bằng nhau */
+  margin: 0 10px; /* Khoảng cách giữa các div */
+  text-align: center;
+}
+
+.order-button {
+  position: absolute; /* Đặt vị trí tuyệt đối cho nút */
+  top: 1px; /* Cách từ trên cùng */
+  right: 1px; /* Cách từ bên phải */
+  padding: 10px 15px;
+  background-color: goldenrod; /* Màu nền cho nút */
+  color: white; /* Màu chữ cho nút */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  opacity: 0.7; /* Màu nền khi hover */
+}
+.box-service {
+  display: flex; /* Sử dụng flexbox để căn chỉnh các div */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các div */
+  padding: 20px; /* Thêm khoảng cách xung quanh container */
+}
+.box1 img {
+  width: 10%; /* Đảm bảo hình ảnh chiếm toàn bộ chiều rộng của div */
+  height: auto; /* Giữ tỉ lệ hình ảnh */
+}
+.box1 {
+  position: relative; /* Đặt vị trí tương đối cho box */
+  flex: 1; /* Các div sẽ có chiều rộng bằng nhau */
+  margin: 0 10px; /* Khoảng cách giữa các div */
+  text-align: center;
+}
+h8 {
+  font-size: 20px;
+}
+h9 {
+  font-size: 20px;
+}
+#pizza-contact {
+  display: flex; /* Sử dụng flexbox để căn chỉnh nội dung */
+  justify-content: space-between; /* Căn giữa hai phần tử */
+  align-items: center; /* Căn giữa theo chiều dọc */
+  padding: 20px; /* Thêm khoảng cách xung quanh */
+}
+h11 {
+  font-size: 35px;
+  margin-left: 200px;
+  font-weight: bold;
+}
+.content1 {
+  margin: 20px 0;
+}
+h10 {
+  margin-left: 200px;
+  color: goldenrod;
+}
+#button-contact {
+  margin-right: 400px;
+}
+footer {
+  padding: 20px; /* Khoảng cách bên trong */
+}
+
+.footer-container {
+  display: flex; /* Sử dụng flexbox để căn chỉnh các cột */
+  justify-content: space-between; /* Tạo khoảng cách đều giữa các cột */
+  text-align: left;
+}
+
+.footer-column {
+  flex: 1; /* Mỗi cột sẽ có chiều rộng bằng nhau */
+  margin: 0 10px; /* Khoảng cách giữa các cột */
+}
+
+.footer-column h4 {
+  margin-bottom: 10px; /* Khoảng cách dưới tiêu đề */
+}
+
+.footer-column p {
+  margin: 5px 0; /* Khoảng cách giữa các đoạn văn */
+}
+#text {
+  font-size: 15px;
+}
+h12 {
+  font-size: 20px;
+  margin-left: 10px;
+}
+#text1 i {
+  margin-right: 15px; /* Khoảng cách bên phải giữa các biểu tượng */
+  font-size: 15px;
+}
+#text1 i:last-child {
+  margin-right: 0; /* Không có khoảng cách bên phải cho biểu tượng cuối cùng */
+}
+.color-icon {
+  cursor: pointer; /* Change cursor to pointer */
+  margin-left: 10px; /* Space between the link and icon */
+  font-size: 20px; /* Size of the icon */
+  color: white; /* Default color of the icon */
+}
+
+.color-icon:hover {
+  color: goldenrod; /* Change color on hover */
+}
+.change-bg-icon {
+  cursor: pointer; /* Change cursor to pointer for better UX */
+}
+body {
+  background-color: white; /* Default body color */
+  color: black; /* Default text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for both background and text colors */
+}
+
+header {
+  background-color: white; /* Default header color */
+  color: black; /* Default header text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+footer {
+  background-color: white; /* Default footer color */
+  color: black; /* Default footer text color */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+nav {
+  background-color: white; /* Default nav color */
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+nav a {
+  color: black; /* Default nav link colors */
+  transition: color 0.3s ease; /* Smooth transition for nav link text colors */
+}
+
+.logo {
+  color: goldenrod; /* Keep logo text constant (black) - this will not change */
+}
+
+/* Background and text colors when toggled */
+body.changed-background,
+header.changed-background,
+footer.changed-background,
+nav.changed-background {
+  background-color: black; /* Changed background color */
+}
+
+/* Change nav link colors when active */
+nav.changed-background a {
+  color: white; /* Changed nav link colors to white when active */
+}
+
+/* Ensure logo remains black regardless of changes in nav or body */
+nav.changed-background .logo {
+  color: goldenrod !important; /* Force logo to remain black even when nav changes */
+}
+/* Add this to your styles.css */
+.section {
+  opacity: 0; /* Bắt đầu với độ mờ bằng 0 */
+  transform: translateY(20px); /* Di chuyển xuống dưới */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out; /* Hiệu ứng chuyển tiếp */
+}
+
+.section.visible {
+  opacity: 1; /* Đặt độ mờ thành 1 khi hiển thị */
+  transform: translateY(0); /* Trở về vị trí ban đầu */
+}
